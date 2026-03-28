@@ -3,18 +3,399 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi blog personal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU90FeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Página de inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/images/navicon/rigby.jpg">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-        <div class= "col-sm-4">1</div>
-        <div class="col-sm-4">2</div>
-        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh8<div class="col-sm-4">3</div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <img src="/assets/images/navicon/rigby.jpg" alt="" width="40px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-3">
+                        <a href="#personajes-fav" class="nav-link">Fav</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#skins-jhin">Jhin</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#skins-kaisa">Kai'sa</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#skins-vayne">Vayne</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-</div>
+    </nav>
+    <div class="container mt-5" id="personajes-fav">
+        <div class="row mx-5">
+            <div class="col">
+
+                <div class="card">
+                    <h5 class="card-title text-center mt-1">JHIN</h5>
+                    <img src="assets\images\Jhin.jpg" alt="Splash art de Jhin" class="card-img-top">
+                    <div class="card-body">
+                        <h6 class="card-subtitle text-center">EL VIRTUOSO</h6>
+                        <p class="card-text">Jhin es un psicópata meticuloso que cree que el asesinato es un arte. Alguna vez un prisionero jonio, pero liberado por elementos sombríos dentro del concejo líder de Jonia, el asesino en serie ahora presta sus servicios como sicario a esa camarilla. Utilizando su arma como un pincel, Jhin crea obras de arte brutales que horrorizan a sus víctimas y testigos. Mostrar sus obras de horripilante drama le causa un placer retorcido, lo que lo convierte en la mejor opción para mandar el más poderoso de los mensajes: el terror.</p>
+                        <div class="text-center">
+                            <a href="#skins-jhin" class="btn btn-primary">SKINS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-title text-center mt-1">KAI'SA</h5>
+                    <img src="assets\images\Kaisa.jpg" alt="Splash art de Kaisa" class="card-img-top">
+                    <div class="card-body">
+                        <h6 class="card-subtitle text-center">LA HIJA DEL VACIO</h6>
+                        <p class="card-text">
+                            Reclamada por el Vacío cuando era tan solo una niña, Kai'Sa ha logrado sobrevivir a través de absoluta tenacidad y fuerza de voluntad. Sus experiencias la han convertido en una cazadora letal y, para algunos, el presagio de un futuro para el cual preferirían no vivir lo suficiente para no verlo. Ahora que forma parte de una inquietante simbiosis con un caparazón viviente del Vacío, pronto le llegará el momento en el que tendrá que decidir si perdona a los mortales que la consideraran un monstruo para vencer juntos a la oscuridad que se aproxima... o simplemente olvidar, mientras el Vacío consume el mundo que la dejó atrás.
+                        </p>
+                        <div class="text-center">
+                            <a href="#skins-kaisa" class="btn btn-primary">SKINS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-title text-center mt-1">VAYNE</h5>
+                    <img src="assets\images\vayne.jpg" alt="Splash art de Vayne" class="card-img-top">
+                    <div class="card-body">
+                        <h6 class="card-subtitle text-center">LA CAZADORA NOCTUNA</h6>
+                        <p class="card-text">
+                            Shauna Vayne es una mortal e implacable cazadora de monstruos demaciana que ha dedicado su vida a encontrar y destruir al demonio que asesinó a su familia. Armada con una ballesta que lleva montada en la muñeca y un corazón lleno de venganza, solo es verdaderamente feliz cuando acaba con practicantes o creaciones de las artes oscuras mientras ataca desde las sombras con una lluvia de proyectiles de plata.                        
+                        </p>
+                        <div class="text-center">
+                            <a href="#skins-vayne" class="btn btn-primary">SKINS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <main>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Galería de Skins: Jhin</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-8"> 
+                <div id="skins-jhin" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="6"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="7"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="8"></button>
+                        <button type="button" data-bs-target="#skins-jhin" data-bs-slide-to="9"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/skin-jhin/Jhin1.jpg" alt="Jhin Forajido" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN EL FORAJIDO</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin2.jpg" alt="Jhin Luna de Sangre" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN LUNA DE SANGRE</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin3.jpg" alt="Jhin Proyecto" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>PROYECTO: JHIN</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin4.jpg" alt="Jhin Oscuridad Cosmica" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN OSCURIDAD CÓSMICA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin5.jpg" alt="Jhin Pergaminos" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN PERGAMINOS SHAN HAI</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin6.jpg" alt="Jhin Empireo" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN EMPIREO</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin7.jpg" alt="Jhin Peleador" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN PELEADOR ÁLMICO</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin8.jpg" alt="Jhin Devastador" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN OSCURIDAD CÓSMICA DEVASTADORA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin9.jpg" alt="Jhin Mitos" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN CREADOR DE MITOS</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-jhin/Jhin10.jpg" alt="Jhin Arcana" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>JHIN ARCANA</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#skins-jhin" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skins-jhin" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Galería de Skins: Kaisa</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-8"> 
+                <div id="skins-kaisa" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="4"></button>                        
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="6"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="7"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="8"></button>
+                        <button type="button" data-bs-target="#skins-kaisa" data-bs-slide-to="9"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/skin-kaisa/kaisa1.jpg" alt="Kaisa Kda" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA K/DA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa2.jpg" alt="Kaisa AllOut" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA KD/A ALL OUT</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa3.jpg" alt="Kaisa Dragon" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA DRAGÓN DE LA LAGUNA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa4.jpg" alt="Kaisa Estelar" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA GUARDIANA ESTELAR</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa5.jpg" alt="Kaisa Tinta" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA TINTA SOMBRÍA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa6.jpg" alt="Kaisa Celestial" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA REINO CELESTIAL</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa7.jpg" alt="Kaisa Oscura" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA ESTRELLA OSCURA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa8.jpg" alt="Kaisa Legendario" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA ESPÍRITU LEGENDARIO</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-kaisa/kaisa9.jpg" alt="Kaisa Inmortalizada" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>KAI'SA LEYENDA INMORTALIZADA</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#skins-kaisa" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skins-kaisa" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Galería de Skins: Vayne</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-8"> 
+                <div id="skins-vayne" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="6"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="7"></button>
+                        <button type="button" data-bs-target="#skins-vayne" data-bs-slide-to="8"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/skin-vayne/vayne1.jpg" alt="Vayne Vengadora" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE VENGADORA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne2.jpg" alt="Vayne Matadragones" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE MATADRAGONES</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne4.jpg" alt="Vayne Luz" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE ARCO DE LUZ</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne5.jpg" alt="Vayne Almas" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE ROBAALMAS</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne6.jpg" alt="Vayne Proyecto" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>PROYECTO: VAYNE</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne7.jpg" alt="Vayne Pirotecnia" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE PIROTECNIA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne8.jpg" alt="Vayne Espiritual" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE FLOR ESPIRITUAL</h3> 
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne9.jpg" alt="Vayne Centinela" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE CENTINELA</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/skin-vayne/vayne10.jpg" alt="Vayne Legendario" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>VAYNE ESPIRITU LEGENDARIO</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#skins-vayne" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skins-vayne" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+<footer>
+    <div class="container-fluid bg-dark py-4 mt-5">
+        <div class="containter text-center">
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.riotgames.com/es" target="_blank" class="d-inline-block mx-5">
+                        <img src="assets/images/icon/riot.png" alt="Logo de Riot Games" width="50" class="img-fluid footer-logo">
+                    </a>
+                    <a href="https://www.leagueoflegends.com/es-es/champions/jhin/" target="_blank" class="d-inline-block mx-5">
+                        <img src="assets/images/icon/jhin-chibi.png" alt="Jhin Chibi" width="50" class="img-fluid footer-logo">
+                    </a>
+                    <a href="https://www.leagueoflegends.com/es-es/champions/kaisa/" target="_blank" class="d-inline-block mx-5">
+                        <img src="assets/images/icon/kaisa-chibi.jpg" alt="Kaisa Chibi" width="50" class="img-fluid footer-logo">
+                    </a>
+                    <a href="https://www.leagueoflegends.com/es-es/champions/vayne/" target="_blank" class="d-inline-block mx-5">
+                        <img src="assets/images/icon/vayne-chibi.jpg" alt="Vayne Chibi" width="50" class="img-fluid footer-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>     
