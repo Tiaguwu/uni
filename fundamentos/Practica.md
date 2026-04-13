@@ -8,7 +8,7 @@
     5. $Σ^+$ = {a, b, aa, ab, ba, bb, ..}
     6. $|Σ|$ = 2
     7. $|Σ^0|$ = 1
-####
+&nbsp;
 2. Sea x = abb una cadena.
     1. $x^0$ = $\lambda$
     2. $x^1$ = abb
@@ -16,7 +16,7 @@
     4. $x^3$ = abbabbabb
     5. $Π_{k=0..3} x^k$ = $x^1.x^2.x^3$ = abbabbabbabbabbabb
     6. $x^r$ = bba
-####
+&nbsp;
 3. Sea V = { a, b} , W = { a, c} 
     1. aa ∈ V x W :heavy_check_mark:
     2. aba ∈ V x W x V :heavy_multiplication_x:
@@ -26,7 +26,7 @@
     6. a$\lambda$ ∈ V x (W $\cup$ $\Lambda$) :heavy_check_mark:
     7. a$\lambda$$\lambda$ ∈ V x (W $\cup$ $\Lambda$) x (W $\cup$ $\Lambda$) :heavy_check_mark:
     8. ac$\lambda$ ∈ V x W x $W^*$ :heavy_check_mark:
-
+&nbsp;
 4. Dados $\Sigma$ = {a, b}, A = {a, c}
     1. $\Sigma$ $\cup$ A = {a, b, c}
     2. $\Sigma$ $\cap$ A = {a}
@@ -37,7 +37,7 @@
     7. $(\Sigma . A)^*$ = {$\lambda$, aa, ac, ba, bc, aaaa, aaac, aaba, aabc, ...}
     8. $\Sigma^* . A^*$ = {$\lambda$, a, b, c, aa, ac, ba, bc, ...}
     9. $\Sigma . \Lambda . A$ = {a$\lambda$a, a$\lambda$c, b$\lambda$a, b$\lambda$c}
-
+&nbsp;
 5. Sean $L_1 $ = { $a^nb^k / 1 \le n \le 2k $} y $L_2$ = { $0^m1^n/$m impar y n par, ó m par y n impar}
 
     1. $a^3b^2$ ∈ $L_1$ :heavy_check_mark:
@@ -52,44 +52,57 @@
     10. $0^31^6a^2b^3$ ∈ $L_1.L_2$ :heavy_multiplication_x:
     11. $a^6b^50^41^7$ ∈ $L_1.L_2$ :heavy_check_mark:
     12. $0^21^9ab^3$ ∈ $L_2.L_1$ :heavy_check_mark:
-
+&nbsp;
 6. 3 cadenas de distinta longitud que pertenezcan a cada uno de los siguientes lenguajes
-
+&nbsp;
     1. $L_1$ = {x / x ∈ {a, b}$^*$ y x contiene al menos 3 b's}
     = {bbb, bbbb, bbbbb}
+    &nbsp;
     2. $L_2$ = {$a^kb^k$ / k $\ge$ 0} 
     = {$\lambda$, ab, aabb}
+    &nbsp;
     3. $L_3$ = {$a^kb^k$ / k $\ge$ 1} 
     = {ab, aabb, aaabbb}
+    &nbsp;
     4. $L_4$ = {$a^kb^j$ / k $\ge$ 0 ^ j $\ge$ 1} 
     = {$\lambda$b, $\lambda$bb, $\lambda$bbb}
+    &nbsp;
     5. $L_5$ = {$a^kb^j$ / k $\ge$ 1 ^ j $\ge$ 0}
     = {a$\lambda$, aa$\lambda$, aaa$\lambda$}
+    &nbsp;
     6. $L_6$ = {$a^kb^n$c^m / k $\neq$ n y n $\neq$ m y k, n, m $\ge$ 0}
     = {$\lambda$bcc, a$\lambda$cc, aab$\lambda$}
+    &nbsp;
     7. $L_7$ = {x / x $\ge$ {a, b, c}$^*$ y x empieza y termina con distinta letra} 
     = {abc, cba, cab}
+    &nbsp;
     8. $L_8$ = {$a^n(ac)^p(bab)^q$ / n $\ge$ 0, q = p+2, p $\ge$ 1} 
     = {$\lambda$acbabbabbab, aacbabbabbab, aaacbabbabbab}
-
+&nbsp;
 7. Para cada uno de los siguientes conjuntos de cadenas, describa formalmente el lenguaje al que pertenecen y el alfabeto sobre el que está definido el lenguaje:
 
     1. $L_1$ = { ab, aab, aaab, aaaab, ...}
     = $a^k$b / k $\ge$ 1
+    &nbsp;
     2. $L_2$ = { d, ddd, ddddd, ddddddd, ... }
     = $d^k$ / k es impar
+    &nbsp;
     3. $L_3$ = { aa, aabbb, aaaabbb, aaaaaabbb, ..., aabbbbbb, aaaabbbbbb,
 aaaaaabbbbbb, ... }
     =  $aa^kb^m$ / k es par y m es impar
+    &nbsp;
     4. $L_4$ = {1011, 101011, 10101011, ..., 10111, 1010111, 101010111, ..., 101111, 10101111, ... }
     = $10^k1^m$ / k $\ge$ 1 ^ m $\ge$ 2
+    &nbsp;
     5. $L_5$ = { ab, aabb, aaabbb, .....}
     = $a^kb^k$ / k $\ge$ 1
+    &nbsp;
     6. $L_6$ = { aab, aaaabb, aaaaaabbb, ....}
     = $aa^kb^k$ / k $\ge$ 1
+    &nbsp;
     7. $L_7$ = { aaabccc, aaaabcccc, aaaaabccccc, ....} crecimiento lineal
     = $a^kbc^k$ / k $\ge$ 3
-
+&nbsp;
 8. Sean A y B alfabetos, A = { a, b, c} y B = { b, c, d}, y $L_1$, $L_2$ y  $L_3$ lenguajes
 $L_1$ = {$a^ib^j$ / i $\ge$ 1, j $\ge$ 1}
 $L_2$ = {$b^ic^j$ / i $\ge$ 1, j $\ge$ 1}
@@ -105,9 +118,8 @@ $L_3$ = = {$a^ib^jc^id^j$ / i $\ge$ 1, j $\ge$ 1}
     8. $L_1 \cup L_2$ es un lenguaje sobre A $\cap$ B. :heavy_multiplication_x:
     9. $L_1$ - $L_2$ es un lenguaje sobre A. :heavy_check_mark: (PREGUNTAR)
 
-#####
+&nbsp;
 9. Sean $L_1$={λ}, $L_2$={aa, ab, bb}, $L_3$={ λ , aa, bb} y $L_4$=Ø, definidos sobre A={a,b}, obtener:
-
     1. $L_1 \cup L_2$ = {$\lambda$, aa, ab, bb}
     2. $L_1 \cup L_3$ = {$\lambda$, aa, bb}
     3. $L_1 \cup L_4$ = {$\lambda$}
@@ -115,7 +127,7 @@ $L_3$ = = {$a^ib^jc^id^j$ / i $\ge$ 1, j $\ge$ 1}
     5. $L_2 \cap L_3$ = {aa, bb}
     6. $L_3 \cap L_4$ = Ø
     7. $L_1 \cap L_4$ = Ø
-
+&nbsp;
 10. Sean $L_1$ y $L_2$ los siguientes lenguajes: $L_1$ = { a } $L_2$ = { b }. Determine los conjuntos de cadenas que pertenecen a los siguientes lenguajes:
     1. $L_1^*$ = {$\lambda$, a, aa, aaa, aaaa, ...}
     2. ($L_1$ . $L_2$)$^*$ = {$\lambda$, ab, abab, ababab, ...}
@@ -123,13 +135,12 @@ $L_3$ = = {$a^ib^jc^id^j$ / i $\ge$ 1, j $\ge$ 1}
     4. $L_1^*$ . $L_2^*$ = {$\lambda . L_2$, a, ab, abb, abbb, ...}
     5. ($L_1 \cup L_2$)$^*$ = {$\lambda$, a, b, aa, ab, ba, bb, aaa, ...}
     6. ($L_1 \cup L_2$)$^*$ . $L_1$ . $L_2$ = {ab, aab, bab, aaab, abab, bbab, aaaab, ...}
-
+&nbsp;
 11. Dados los siguientes lenguajes
 $L_1$ = { $a^nb^mc^k$ / n, m, k $\ge$ 0 }
 $L_2$ = { $a^ib^jc^i$ / i, j $\ge$ 1 }
 L3 = { x / x ∈ {a, b}* y la cantidad de símbolos a es el doble que la cantidad de símbolos b}
 Determine:
-
     1. $L_1 \cap L_2$ = { $a^ib^jc^i$ / i, j $\ge$ 1 }
     2. $L_1 \cup L_2$ = { $a^nb^mc^k$ / n, m, k $\ge$ 0 }
     3. $L_1 - L_2$ = {cadenas donde n $\neq$ k, o donde n, k o m = 0}
@@ -167,3 +178,54 @@ Determine:
     12. { $a^{3n}b^{2n}$ / n > 0} - { $a^kb^j$ / k,j $\ge$ 0}
     =
 
+13. Demostrar por inducción que:
+a. |a.(a.α)| = 2+|α| Σ={a} , α ∈ Σ* 
+&nbsp;
+        **Base Inductiva:** Sea $\alpha = \lambda$
+        $|a \cdot (a \cdot \lambda)| = $2 + |$\lambda$|
+        |a $\cdot$ a| = 2 + 0
+        2 = 2
+&nbsp;
+        **Hipótesis Inductiva (HI):** Supongamos que vale para una cadena $\alpha$ de longitud $n$:
+        $|a \cdot a \cdot \alpha| = 2 + |\alpha|$.
+&nbsp;
+        **Paso Inductivo:** Probemos para una cadena $\alpha'$ de longitud $n+1$, donde $\alpha' = \alpha \cdot a$.
+        $|a \cdot a \cdot (\alpha \cdot a)| = 2 + |\alpha \cdot a|$
+        $|(a \cdot a \cdot \alpha) \cdot a| = 2 + |\alpha \cdot a|$
+        $|a \cdot a \cdot \alpha| + 1 = 2 + |\alpha \cdot a|$
+        $(2 + |\alpha|) + 1 = 2 + |\alpha \cdot a|$
+        $2 + (|\alpha| + 1) = 2 + |\alpha \cdot a|$
+        $2 + |\alpha \cdot a| = 2 + |\alpha \cdot a|$
+&nbsp;
+    b.  Demostrar: $|x^r| = |x|$
+&nbsp;
+        **Base Inductiva:** Sea $x = \lambda$
+        $|\lambda^r| = |\lambda| = 0$
+&nbsp;
+        **Hipótesis Inductiva (HI):** Supongamos que para una cadena $x$ se cumple $|x^r| = |x|$
+&nbsp;
+    **Paso Inductivo:** Probemos para $x \cdot a$
+    $|(x \cdot a)^r| = x \cdot a$
+    $|a \cdot x^r| = x \cdot a$
+    $|a| + |x^r| = x \cdot a$
+    $1 + |x^r| = x \cdot a$
+    $1 + |x| = x \cdot a$
+    $|x \cdot a| = x \cdot a$
+&nbsp;
+    c. Demostrar: $|x \cdot x| = 2|x|$
+&nbsp;
+    **Base Inductiva:** Sea $x = \lambda$
+    $|\lambda \cdot \lambda| = 2|\lambda|$
+    $|\lambda| = 2(0)$
+    $0 = 0$
+&nbsp;
+    **Hipótesis Inductiva (HI):** Supongamos que para $x$ se cumple $|x \cdot x| = 2|x|$
+&nbsp;
+    **Paso Inductivo:** Probemos para $x \cdot a$
+    $|(x \cdot a) \cdot (x \cdot a)| = 2|x \cdot a|$
+    $|x \cdot a| + |x \cdot a| = 2|x \cdot a|$
+    $(|x| + 1) + (|x| + 1) = 2|x \cdot a|$
+    $(|x| + |x|) + (1 + 1) = 2|x \cdot a|$
+    $2|x| + 2 = 2|x \cdot a|$
+    $2(|x| + 1) = 2|x \cdot a|$
+     $2|x \cdot a| = 2|x \cdot a|$
