@@ -1034,3 +1034,84 @@ C2 = {B, C, D} = B
 ![alt text](image-14.png)
 
 ## **Ejercicio 10 — Traductores finitos**
+
+**10.A. Análisis de la traducción T = {(a bʲ, b aʲ) : i,j ≥ 1}**
+
+M = (Q, $\Sigma$, Γ, $\delta, s_0, f_0$)
+
+Q = {q0, q1, q2, ..., q30}
+$\Sigma$ = {a, b}
+Γ = {a, b}
+$s_0$ = q0
+
+|$\delta$|a|b|$f_a$|$f_b$|
+|:-:|:-:|:-:|:-:|:-:|
+|q0|q1|-|b|-|
+|q1|q1|q2|b|a|
+|q2|-|q2|-|a|
+
+![alt text](image-15.png)
+
+**10.B. Verificación del transductor hex→binario**
+
+M = (Q, $\Sigma$, Γ, $\delta, s_0, f_0$)
+
+Q = {q0, q1, q2}
+$\Sigma$ = {0, 1}
+Γ = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
+$s_0$ = q0
+
+|$\delta$|0|1|$f_0$|$f_1$|
+|:-:|:-:|:-:|:-:|:-:|
+|q0|q1|q16|$\lambda$|$\lambda$|
+|q1|q2|q9|$\lambda$|$\lambda$|
+|q2|q3|q6|$\lambda$|$\lambda$|
+|q3|q4|q5|0|1|
+|q4|-|-|-|-|
+|q5|-|-|-|-|
+|q6|q7|q8|2|3|
+|q7|-|-|-|-|
+|q8|-|-|-|-|
+|q9|q10|q13|$\lambda$|$\lambda$|
+|q10|q11|q12|4|5|
+|q11|-|-|-|-|
+|q12|-|-|-|-|
+|q13|q14|q15|6|7|
+|q14|-|-|-|-|
+|q15|-|-|-|-|
+|q16|q17|q24|$\lambda$|$\lambda$|
+|q17|q18|q21|$\lambda$|$\lambda$|
+|q18|q19|q20|8|9|
+|q19|-|-|-|-|
+|q20|-|-|-|-|
+|q21|q22|q23|A|B|
+|q22|-|-|-|-|
+|q23|-|-|-|-|
+|q24|q25|q28|$\lambda$|$\lambda$|
+|q25|q26|q27|C|D|
+|q26|-|-|-|-|
+|q27|-|-|-|-|
+|q28|q29|q30|E|F|
+|q29|-|-|-|-|
+|q30|-|-|-|-|
+
+![alt text](image-16.png)
+
+**10.C. Caso límite del traductor de 4 blancos**
+
+M = (Q, $\Sigma$, Γ, $\delta, s_0, f_0$)
+
+Q = {q0, q1, q2, q3, q4}
+$\Sigma$ = {caracter, espacio}
+Γ = {/t}
+$s_0$ = q0
+
+|$\delta$|caracter|blanco|$f_{cararcter}$|$f_{blanco}$|
+|:-:|:-:|:-:|:-:|:-:|
+|q0|q0|q1|$\lambda$|$\lambda$|
+|q1|q0|q2|$\lambda$|$\lambda$|
+|q2|q0|q3|$\lambda$|$\lambda$|
+|q3|q0|q4|$\lambda$|/t|
+|q4|q0|-|$\lambda$|-|
+
+![alt text](image-17.png)
